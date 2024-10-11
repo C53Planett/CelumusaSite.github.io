@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celumusa Shezi Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/324e4eb168.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/CELULOGO.png" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="images/Celumusa Shezi CV.pdf" download >Hire Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu"></i>
+            </nav>
+            <div class="header-text" id="home">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Celumusa</span> </br> Shezi From Durban.</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------About-------------->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/MUSApicture.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About Me</h1>
+                <p>I am Celumusa Shezi, an enthusiastic and driven ICT professional with a Diploma in Information and Communications Technology: Application Development from Durban University of Technology. My passion lies in the intersection of DevOps practices and cybersecurity, where I leverage my technical expertise to solve complex challenges.
+
+                    
+                    I am currently seeking opportunities to contribute my skills to forward-thinking organizations, with a particular interest in roles that allow me to grow within the realms of DevOps and cybersecurity.
+                    
+                    For more information about my work and projects, feel free to visit my portfolio website.                    
+                </p>
+                <div class="tab">
+                    <p class="tablinks defaultOpen" onclick="openTab(event, 'Tab1')"id="defaultOpen">Profile</p>
+                    <p class="tablinks" onclick="openTab(event, 'Tab2')">Education</p>
+                    <p class="tablinks" onclick="openTab(event, 'Tab3')">Achievements</p>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="Tab1" class="tabcontent">
+                    <ul>
+                        <li><span>Full Name</span><br>Celumusa Shezi</li>
+                        <li><span>Date of Birth</span><br>25 January 2001</li>
+                        <li><span>Location</span><br>Durban, KwaZulu-Natal, South Africa</li>
+                    </ul>
+                </div>
+                
+                <div id="Tab2" class="tabcontent">
+                    <ul>
+                        <li><span>2023</span><br>Dip ICT: Application Development</li>
+                        <li><span>2018</span><br>NSC: Matric</li>
+                    </ul>
+                </div>
+                
+                <div id="Tab3" class="tabcontent">
+                    <ul>
+                        <li><span>Jun 2024</span><br>Microsoft Certified: Azure Fundamentals(AZ-900)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------------------------Portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">Portfolio</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-window-restore"></i>
+                    <h2>Personal Portfolio</h2>
+                    <p>This project involved creating a personal portfolio <br> website to showcase my skills, projects, 
+                        and <br> professional experience as  a junior developer. <br> The website was built using HTML, CSS and JavaScript.
+                        
+                    </p>
+                    <br>
+                    <a href="#"> <span> View</span></a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>First Repo</h2>
+                    <p>This was the first personal website that I worked on. <br> It is not perfect but it showcases where I started.
+                    </p>
+                    <br>
+                    <a href="https://pero-s-academy.github.io/C53Planett/"> <span> View</span></a>
+
+                </div>
+              <!------- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Another one</h2>
+                    <p>
+                    </p>
+                    <br>
+                    <a href=""> <span> View</span></a>
+                </div>
+            ---->
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------Contact-------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-titles">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-location-dot"></i>  40 Joseph Nduli Street, Durban Central,br Durban, 4001</p>
+                    <p><i class="fa-solid fa-envelope"></i>  celumusaofficial@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  0826376330</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/c-shezi53"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/C53Planett"><i class="fa-brands fa-github"></i></a>
+                        <a href=" "><i class="fa-solid fa-globe"></i></a>
+                        <a href="https://web.facebook.com/celumusa.shezi.71/"><i class="fa-brands fa-square-facebook"></i></a>
+
+                    </div>
+                    <a href="images/Celumusa Shezi CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 <span>C</span>elumusa. Created with <i class="fa-solid fa-heart"></i> by Celumusa Shezi.</p>
+    </div>
+
+  <script>
+
+    // Open the side navigation
+/*function openNav() {
+    document.getElementById("sideNav").classList.add("active");
+}*/
+
+/*Close the side navigation
+function closeNav() {
+    document.getElementById("sideNav").classList.remove("active");
+}*/
+
+
+    //Function to open the side navigation 
+     function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    // Function to close the side navigation 
+    function closeNav(){
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    
+    }
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+    
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    
+    // Automatically open the first tab when the page loads
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
